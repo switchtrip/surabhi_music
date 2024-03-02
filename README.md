@@ -1,1 +1,1 @@
-Web page for surabhi music academy
+Web page for Surabhi Music Academy
