@@ -1,0 +1,36 @@
+#eq{
+    display: flex;
+    height: 23px;
+    width: 30px;
+    /* border: 1px solid rgb(119, 30, 30); */
+    gap:3px;
+}
+.bar{
+    display: block;
+    height: 10px;
+    width: 2px;
+    background-color:white;
+    opacity: .5;
+    transform-origin: bottom;
+}
+#eq.active .bar{
+    animation: bar 0.4s ease 0s infinite alternate both;
+    opacity: 1;
+}
+#eq.active .bar1{
+    animation-delay: 0.2s;
+}
+#eq.active .bar2{
+    animation-delay: 0.4s;
+}
+#eq.active .bar3{
+    animation-delay: 0.6s;
+}
+@keyframes bar {
+    from {
+        transform: scaleY(0);
+    }
+    to {
+        transform: scaleY(1);
+    }
+}
