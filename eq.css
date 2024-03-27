@@ -5,6 +5,7 @@
     gap:3px;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 .bar{
     display: block;
@@ -29,7 +30,6 @@
 }
 
 #eq:hover{
-    cursor: pointer;
     transform: scale(1.1);
 }
 

@@ -4,6 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="main.css" />
+
+    <!-- Favicon attachments -->
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="./favicon_package_v0.16/favicon.ico" /> -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon_package_v0.16/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon_package_v0.16/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon_package_v0.16/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./favicon_package_v0.16/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./favicon_package_v0.16/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- Favicon attachments -->
     <title>Surabhi Music Academy</title>
   </head>
   <body>
@@ -16,31 +45,66 @@
             alt="Surabhi Music for Health"
         /></a>
       </div>
-      <div id="media">
-        <div id="prev-btn"> </div>
-        <div id="eq">
-          <span class="bar bar1"></span>
-          <span class="bar bar2"></span>
-          <span class="bar bar3"></span>
+      <button
+        class="mobile-nav-toggle"
+        aria-controls="primary-navigation"
+        aria-expanded="false"
+      >
+        <span class="sr-only">Menu</span>
+        <div id="header-ham">
+          <div class="hambar hambar-1"></div>
+          <div class="hambar hambar-2"></div>
+          <div class="hambar hambar-3"></div>
         </div>
-        <div id="next-btn"> </div>
-      </div>
-      <div id="separator">
-        <img src="images/seprator_flute.png" alt="-----------------------------------------------------------------------">
-      </div>
-      <div id="nav">
-        <ul class="nav-links">
+      </button>
+      <nav>
+        <ul data-visible="false" class="primary-navigation">
           <li><a href="index.html">Home</a></li>
           <li><a href="events.html">Events</a></li>
           <li><a href="gallery.html">Gallery</a></li>
           <li><a href="classes.html">Classes</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
-      </div>
+      </nav>
     </header>
+    <div id="media">
+      <div id="prev-btn"></div>
+      <div id="eq">
+        <span class="bar bar1"></span>
+        <span class="bar bar2"></span>
+        <span class="bar bar3"></span>
+      </div>
+      <div id="next-btn"></div>
+    </div>
+    <!-- <div id="separator">
+        <img
+          src="images/seprator_flute.png"
+          alt="-----------------------------------------------------------------------"
+        />
+      </div> -->
     <main>
-      <section id="hero"></section>
+      <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/zPbBdConKoU?si=FtCaMh8eMhExCz5f&amp;start=10&mute=1&autoplay=1&loop=1&rel=0&playlist=zPbBdConKoU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+
+      <!-- <h1>Gallery</h1>
+      <section class="gallery">
+        <img src="images/Sir_E_Base.JPG" alt="" class="gallery-img">
+        <img src="images/sir_flute_D.png" alt="" class="gallery-img">
+        <img src="images/sir_sitting_MO.png" alt="" class="gallery-img">
+        <img src="images/guest saitejas.jpg" alt="" class="gallery-img">
+      </section> -->
+      <article class="left-right">
+        <div class="left">
+          <article class="card">
+            <h1>Guruji Shri Sunil Patil</h1>
+            <p></p>
+          </article>
+        </div>
+        <section class="right">
+          <img src="images/sir_sitting_MO_hd.png" />
+        </section>
+      </article>
     </main>
     <script src="script.js"></script>
+    <script src="nav.js"></script>
   </body>
 </html>

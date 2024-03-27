@@ -1,0 +1,27 @@
+:root {
+  --ham-dim: 25px;
+  --ham-bar-col: rgba(255, 255, 255, 0.7);
+}
+
+#header-ham {
+  width: var(--ham-dim);
+  height: var(--ham-dim);
+  /* border: 1px solid green; */
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(180deg);
+  cursor:pointer;
+  transition: 550ms;
+}
+#header-ham:hover {
+  transition: 250ms;
+}
+.hambar {
+  width: calc(var(--ham-dim) * 0.7);
+  border: calc(var(--ham-dim)*0.07) solid var(--ham-bar-col);
+  border-radius: 10px;
+}
+.hambar-2 {
+  width: calc(var(--ham-dim) * 0.55);
+}

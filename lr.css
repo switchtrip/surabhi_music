@@ -1,0 +1,37 @@
+.left-right{
+    margin: 2rem auto;
+    /* border: 1px solid white; */
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+}
+
+.left{
+    border: 1px solid rgb(23, 150, 74);
+    max-width: 700px;
+    flex-grow: 2;
+}
+.card{
+    padding: 2rem;
+}
+.card h1{
+    font-weight: 1000;
+    font-size: 2rem;
+    margin: 1rem 0;
+    color:rgb(248, 139, 37);
+}
+.card p{
+    font-size: large;
+}
+.right img{
+    min-width: 300px;
+    max-width: 600px;
+    object-fit: cover;
+    aspect-ratio: 1;
+    border-radius: 100vw;
+}
+.right {
+    /* width: 400px;
+    height: 400px; */
+    border: 1px solid yellow;
+}
