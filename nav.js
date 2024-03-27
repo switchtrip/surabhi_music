@@ -9,7 +9,6 @@ navToggle.addEventListener("click", ()=>{
 })
 // Toggle nav area on mobile view when clicked out
 document.addEventListener("click", (e)=>{
-    // const visibility = primaryNav.getAttribute("data-visible");
     const outArea = !navToggle.contains(e.target) && !primaryNav.contains(e.target)
     const visibility = primaryNav.getAttribute("data-visible");
     console.log("Out area clicked", visibility==="true" && outArea);
