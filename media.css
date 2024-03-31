@@ -4,6 +4,7 @@
     /* border: 2px solid white; */
     align-items: center;
     gap:6px;
+    margin-top: 1rem;
 }
 
 #next-btn{

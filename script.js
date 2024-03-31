@@ -2,7 +2,7 @@ const eq = document.getElementById("eq");
 const nextbtn = document.getElementById("next-btn");
 const prevbtn = document.getElementById("prev-btn");
 let audio = new Audio();
-var audFiles = ["Audio/NNMKA.mp3", "Audio/AJT.wav", "Audio/Dhun.mp3"]
+var audFiles = ["Audio/AJT_amp.wav","Audio/NNMKA.mp3", "Audio/Dhun.mp3"]
 // audio.src = "Audio/AJT.wav"
 // audio.loop = true;
 var i=0;
@@ -14,8 +14,6 @@ function prevAudFile(){
     } else {
         i--;
     }
-    // console.log(i);
-    // console.log(audio.src);
     audio.src = audFiles[i];
     audio.play();
 }
