@@ -1,4 +1,5 @@
 @import url("callbtn.css");
+@import url("social.css");
 .location {
   /* background-image: linear-gradient(rgb(98, 95, 98), rgb(9, 9, 9)); */
   max-width: var(--max-wid, 1000px);
